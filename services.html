@@ -1,0 +1,429 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mauli Electricals</title>
+  <link rel="icon" href="content/logo.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+
+<style>
+  .about{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    padding-top: -10%;
+    padding: 10%;
+    grid-column-gap: 10%;
+    grid-row-gap: 10%;
+
+}
+
+@media only screen and (max-width: 800px) {
+    .about{
+      min-height: 100vh;
+        grid-template-columns: 100%;
+    }
+    .about img{
+      margin-bottom: 160px;
+    }
+    .about p{
+      margin-bottom: -100px;
+    }
+}
+
+.image1 {
+  background: linear-gradient(to right, #000000f1, #00000046), url(img/simg1.jpg) no-repeat;
+}
+.image2 {
+  background: linear-gradient(to right, #000000f1, #00000079), url(img/simg2.jpg) no-repeat;
+}
+.image3 {
+  background: linear-gradient(to right, #000000f1, #0000006e), url(img/simg3.jpg) no-repeat;
+}
+.image4 {
+  background: linear-gradient(to right,  #000000f1, #00000046), url(img/simg4.jpg) no-repeat;
+}
+.image5 {
+  background: linear-gradient(to right, #000000f8, #0000006e), url(img/simg5.jpg) no-repeat;
+}
+.image6 {
+  background: linear-gradient(to right, #000000f1, #00000046), url(img/simg6.png) no-repeat;
+}
+.image7 {
+  background: linear-gradient(to right, #000000f1, #00000048), url(img/simg7.jpeg) no-repeat;
+}
+.image9 {
+  background: linear-gradient(to right, #000000f1, #00000046), url(img/simg8.jpg) no-repeat;
+}
+.image8 {
+  background: linear-gradient(to right, #000000f1, #00000069), url(img/simg9.jpg) no-repeat;
+}
+
+</style>
+<body >
+  <nav class="fixed p-5 bg-white shadow md:flex md:items-center md:justify-between min-w-full z-50">
+    <div class="flex justify-between items-center ">
+      <span class="text-2xl font-[Poppins] cursor-pointer">
+          <a href="index.html"><img class="h-10 inline"
+          src="img/logo.png"></a>
+      </span>
+
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+
+    <ul class="md:flex md:items-center z-[1]  md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 right-[-200px] transition-all ease-in duration-200">
+      <li class="mx-4 my-6 md:my-0">
+        <a href="index.html" class="font-bold tracking-wide text-l hover:text-red-600 duration-500 ">HOME</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="services.html" class="font-bold tracking-wide text-l hover:text-red-600 duration-500">SERVICES</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="about.html" class="font-bold tracking-wide text-l hover:text-red-600 duration-500">ABOUT</a>
+      </li>
+
+      <button class="bg-red-600 text-white font-bold tracking-wide duration-500 px-6 py-2 mx-4 hover:bg-red-800 rounded ">
+        <a href="contact.html"> CONTACT US</a>
+      </button>
+        <h2 class=""></h2>
+            </ul>
+  </nav>
+
+  <section class="container min-w-full"> 
+    <div class="bg-relative bg-center bg-no-repeat bg-cover min=w-full" style="background: linear-gradient(to right, #000000d7, #00000021), url('img/serviceshome.jpg') no-repeat; height: 100vh; background-size: cover;">
+      <div class="h-full flex flex-col justify-center items-left text-white text-2xl font-semibold">
+        <h1 class="text-7xl text-red-600" style="font-family:Arial, Helvetica, sans-serif; letter-spacing:1px; margin-left:4%; ">Mauli</h1>
+        <h1 class="text-7xl" style="font-family:Arial, Helvetica, sans-serif; letter-spacing:1px; margin-left:6%;">Electrical</h1>
+        <h1 class="text-7xl text-red-600" style="font-family:Arial, Helvetica, sans-serif; letter-spacing:1px; margin-left:8.5%;">Services</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="section1">
+    <div class="about ">
+      <div class="abouttext ">
+      <h2 class="text-2xl md:text-4xl text-red-600 font-bold">ELECTRICAL SOLUTIONS</h2>
+      <h2 class="text-2xl md:text-3xl font-bold">FOR DIVERSE REQUIREMENTS<br></h2>
+      <h2 class="text-3xl text-red-600 md:text-4xl font-bold">___________ <br></h2>
+      <p class="py-5 text-l md:text-xl ">Mauli Electricals are
+        committed to providing our customers, suppliers and employees with the highest quality of
+        service and professionalism. <br>
+        <br>Mauli Electricals are committed to the timely completion of all
+        our services ensuring clients that we meet your requirements on time and within the specified budget. <br><br>
+        Mauli Electricals main factor of work is testing work however, when undertaking electrical
+        installations we have a good range of suppliers who are able to deliver parts rapidly to
+        decrease the waiting time for clients and ensures all deadlines are met. <br><br>
+        We strive to meet the highest level of customer satisfaction and additionally, we possess a wide scope of electrical knowledge and skills. 
+      </p>
+      </div>
+          <img src="img/servicessec1.png" class="rounded-xl md: pt-px-[-4] secaimg">
+    </div>
+  </section>
+
+  <h1 class="text-center md:text-left md:mx-10 text-4xl md:text-5xl text-white-900 font-bold opacity-80">WHAT WE OFFER</h1>
+  <h1 class="text-center md:text-left md:mx-10 text-4xl md:text-5xl text-red-600 font-bold">&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</h1> <br><br>
+
+  <section class="parallax">
+  <div class="h-screen image1 bg-fixed bg-center bg-no-repeat bg-cover">
+    <div class="min-h-screen flex items-center justify-left">
+      <div class="max-w-7xl px-10 py-5 ">
+        <h2 class="text-red-600 text-4xl md:text-6xl font-bold leading-snug">High-Tension Line</h2>
+        <h2 class="text-red-100 text-4xl md:text-6xl font-bold leading-snug">Work upto 22kv</h2>
+        <h2 class="text-red-600 text-4xl md:text-6xl font-bold leading-snug">________ </h2>
+        <p class="mt-2 text-white text-l md:text-l max-w-2xl"><br>Our high-tension line work at 22 kV is a testament to our expertise in the electrical solutions industry. With a focus on safety and precision, we specialize in the installation, maintenance, and management of high-voltage power distribution systems. From designing efficient transmission networks to executing intricate line work, we ensure the uninterrupted flow of electricity for industrial and commercial clients. Our commitment to quality, reliability, and compliance with industry standards makes us the preferred choice for businesses seeking dependable electrical solutions at high voltage levels.</p>
+      </div>
+    </div>
+  </div>
+  <div class="h-screen image2 bg-fixed bg-center bg-no-repeat bg-cover">
+    <div class="min-h-screen flex items-center justify-left">
+      <div class="max-w-7xl px-10 py-5 ">
+        <h2 class="text-red-600 text-4xl md:text-6xl font-bold leading-snug">Ground Earthing</h2>
+        <h2 class="text-red-100 text-4xl md:text-6xl font-bold leading-snug">with Copper Strip</h2>
+        <h2 class="text-red-600 text-4xl md:text-6xl font-bold leading-snug">________ </h2>
+        <p class="mt-2 text-white text-l md:text-l max-w-2xl"><br>At our firm, we offer a specialized service in ground earthing with copper strips, a crucial component of electrical safety and reliability. Our experts install and maintain efficient earthing systems using high-quality copper strips to dissipate electrical faults and protect both people and equipment from potential hazards. With an emphasis on safety and compliance, our solutions ensure effective grounding, mitigating risks associated with electrical faults, lightning, and surge protection. Count on us for a robust, copper-based grounding system that safeguards your infrastructure, assets, and personnel, ensuring uninterrupted operations and peace of mind.</p>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="h-screen image3 bg-fixed bg-center bg-no-repeat bg-cover"></div> -->
+  <div class="h-screen image3 bg-fixed bg-center bg-no-repeat bg-cover">
+    <div class="min-h-screen flex items-center justify-left">
+      <div class="max-w-7xl px-10 py-5 ">
+        <h2 class="text-red-600 text-4xl md:text-6xl font-bold leading-snug">Power Transformer / </h2>
+        <h2 class="text-red-100 text-4xl md:text-6xl font-bold leading-snug">High-Tension Panel Work</h2>
+        <h2 class="text-red-600 text-4xl md:text-6xl font-bold leading-snug">________ </h2>
+        <p class="mt-2 text-white text-l md:text-l max-w-2xl"><br>Power transformers and High Tension (HT) panels are the backbone of electrical distribution systems, and we specialize in their installation, maintenance, and management. Our experienced team ensures the efficient and reliable operation of these critical components, making us the preferred choice for industries seeking top-tier electrical solutions. We deliver tailored solutions, whether it's installing power transformers to meet growing energy demands or managing HT panels for seamless power distribution. With a commitment to safety and sustainability, we empower businesses to optimize their electrical infrastructure, enhancing productivity and ensuring uninterrupted power supply. Trust us to be your partner in power transformation and distribution.</p>
+      </div>
+    </div>
+  </div>
+  <div class="h-screen image4 bg-fixed bg-center bg-no-repeat bg-cover">
+    <div class="min-h-screen flex items-center justify-left">
+      <div class="max-w-7xl px-10 py-5 ">
+        <h2 class="text-red-600 text-4xl md:text-6xl font-bold leading-snug">High-Tension XLPE </h2>
+        <h2 class="text-red-100 text-4xl md:text-6xl font-bold leading-snug">Cable Installation</h2>
+        <h2 class="text-red-600 text-4xl md:text-6xl font-bold leading-snug">________ </h2>
+        <p class="mt-2 text-white text-l md:text-l max-w-2xl"><br>Our expertise extends to the installation of High-Tension (HT) Cross-Linked Polyethylene (XLPE) cables, a vital element of modern power transmission. We specialize in the meticulous installation of XLPE cables, ensuring reliable energy distribution for a wide range of applications. Our team is well-versed in managing and maintaining these high-performance cables, adhering to industry standards for safety and efficiency. With a focus on quality and durability, we provide tailored solutions to meet the unique needs of each project. Count on us for the seamless installation of HT XLPE cables, empowering your electrical infrastructure with resilient, high-capacity transmission capabilities.</p>
+      </div>
+    </div>
+  </div>
+  <div class="h-screen image5 bg-fixed bg-center bg-no-repeat bg-cover">
+    <div class="min-h-screen flex items-center justify-left">
+      <div class="max-w-7xl px-10 py-5 ">
+        <h2 class="text-red-600 text-4xl md:text-6xl font-bold leading-snug">Underground & Overhead</h2>
+        <h2 class="text-red-100 text-4xl md:text-6xl font-bold leading-snug">Feeder Pillar Installation</h2>
+        <h2 class="text-red-600 text-4xl md:text-6xl font-bold leading-snug">________ </h2>
+        <p class="mt-2 text-white text-l md:text-l max-w-2xl"><br>We offer comprehensive services in the installation of both High Tension (HT) and Low Tension (LT) underground and overhead feeder pillars. Our experienced team specializes in setting up these critical electrical components to ensure efficient power distribution. Whether it's underground cabling for discreet and secure transmission or overhead installations for accessibility, we prioritize safety and reliability. We custom-design and implement feeder pillar solutions tailored to your specific requirements, enhancing electrical infrastructure efficiency and resilience. Trust us for a seamless and cost-effective approach to managing HT and LT feeder pillars, enabling reliable power supply for a variety of applications.</p>
+      </div>
+    </div>
+  </div>
+  <div class="h-screen image6 bg-fixed bg-center bg-no-repeat bg-cover">
+    <div class="min-h-screen flex items-center justify-left">
+      <div class="max-w-7xl px-10 py-5 ">
+        <h2 class="text-red-600 text-4xl md:text-6xl font-bold leading-snug">22kV Substation & Bay</h2>
+        <h2 class="text-red-100 text-4xl md:text-6xl font-bold leading-snug">Breaker Installation</h2>
+        <h2 class="text-red-600 text-4xl md:text-6xl font-bold leading-snug">________ </h2>
+        <p class="mt-2 text-white text-l md:text-l max-w-2xl"><br>Our firm excels in the installation of 22 kV substations and bay breakers, critical components of high-voltage electrical systems. We have a proven track record of designing, building, and maintaining these facilities with precision and efficiency. Our experienced team ensures that your 22 kV substation and bay breaker installation meets industry standards for safety, performance, and reliability. We tailor solutions to your specific needs, enabling efficient power distribution, fault management, and seamless operation. Trust us to be your partner in creating a robust electrical infrastructure capable of meeting the demands of modern industries.</p>
+      </div>
+    </div>
+  </div>
+  <div class="h-screen image7 bg-fixed bg-center bg-no-repeat bg-cover">
+    <div class="min-h-screen flex items-center justify-left">
+      <div class="max-w-7xl px-10 py-5 ">
+        <h2 class="text-red-600 text-4xl md:text-6xl font-bold leading-snug">GIS Substation</h2>
+        <h2 class="text-red-100 text-4xl md:text-6xl font-bold leading-snug">Installation</h2>
+        <h2 class="text-red-600 text-4xl md:text-6xl font-bold leading-snug">________ </h2>
+        <p class="mt-2 text-white text-l md:text-l max-w-2xl"><br>Our firm is the best in Gas-Insulated Switchgear (GIS) substation installation, a cutting-edge solution for high-voltage electrical distribution. We specialize in the design, construction, and maintenance of GIS substations, offering a compact and environmentally friendly alternative to traditional air-insulated substations. With a focus on safety, efficiency, and environmental responsibility, we ensure the seamless installation and operation of GIS substations. Our expert team designs custom solutions to meet your specific requirements, empowering your infrastructure with a reliable and space-efficient electrical distribution system. Trust us to provide state-of-the-art GIS substation installations for industries seeking advanced and sustainable power solutions.</p>
+      </div>
+    </div>
+  </div>
+  <div class="h-screen image8 bg-fixed bg-center bg-no-repeat bg-cover">
+    <div class="min-h-screen flex items-center justify-left">
+      <div class="max-w-7xl px-10 py-5 ">
+        <h2 class="text-red-600 text-4xl md:text-6xl font-bold leading-snug">All Types of Industrial LT panel</h2>
+        <h2 class="text-red-100 text-4xl md:text-6xl font-bold leading-snug">Installation with Motorized Operation</h2>
+        <h2 class="text-red-600 text-4xl md:text-6xl font-bold leading-snug">________ </h2>
+        <p class="mt-2 text-white text-l md:text-l max-w-2xl"><br>We provide comprehensive services for the installation of various types of Industrial Low Tension (LT) panels, complete with motorized operation capabilities. Our expertise extends to diverse industries, ensuring seamless power distribution and machinery control. We specialize in setting up custom LT panels that incorporate motorized operation, enhancing the efficiency of your electrical systems. From motor control to automation, our solutions empower your industrial infrastructure with advanced functionality. Count on us for tailored installations that optimize your operations, ensuring precise control, energy efficiency, and reliability.</p>
+      </div>
+    </div>
+  </div>
+  <div class="h-screen image9 bg-fixed bg-center bg-no-repeat bg-cover">
+    <div class="min-h-screen flex items-center justify-left">
+      <div class="max-w-7xl px-10 py-5 ">
+        <h2 class="text-red-600 text-4xl md:text-6xl font-bold leading-snug">Liaisoning Work as per</h2>
+        <h2 class="text-red-100 text-4xl md:text-6xl font-bold leading-snug">SEB group regulations</h2>
+        <h2 class="text-red-600 text-4xl md:text-6xl font-bold leading-snug">________ </h2>
+        <p class="mt-2 text-white text-l md:text-l max-w-2xl"><br>
+          Mauli Electricals specializes in liaisoning work, tailored to comply with the regulations set forth by the State Electricity Board (SEB) group. We facilitate seamless coordination and communication between your organization and the SEB, ensuring compliance with their standards and requirements. Our experienced team handles all liaisoning tasks, including permitting, documentation, and approvals, to streamline your electrical projects and maintain adherence to the SEB's regulations. Trust us to navigate the regulatory landscape on your behalf, facilitating smooth interactions with the SEB to ensure your electrical initiatives meet all necessary standards and are carried out efficiently.</p>
+      </div>
+    </div>
+  </div>
+  </section>
+  
+<br><br><br><br>
+
+<h1 class="text-center md:text-left md:mx-10 text-3xl md:text-5xl text-white-900 font-bold opacity-80">MAJOR BENEFITS <br> OF WORKING WITH US</h1>
+<h1 class="text-center md:text-left md:mx-10 text-4xl md:text-5xl text-red-600 font-bold">&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</h1>
+
+<section>
+  <div class="relative bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+      <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+        <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <polygon points="50,0 100,0 50,100 0,100" />
+        </svg>
+  
+        <div>
+          <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+            <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+              <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+                <div class="flex items-center justify-between w-full md:w-auto">
+                  <div class="-mr-2 flex items-center md:hidden">
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+            <div class="  bg-white overflow-hidden">
+              <div class="px-5 pt-4 flex items-center justify-between">
+                <div class="-mr-2">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+          <div class="sm:text-center lg:text-left">
+            <h1 class="text-4xl font-bold sm:text-5xl md:text-5xl">
+              <span class="block text-red-600 xl:inline">MSEDCL</span>
+              <span class="block xl:inline">EXPRESS FEEDER</span>
+              <h1 class="text-left md:text-left text-4xl md:text-5xl text-red-600 font-bold">&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</h1></h1>
+            <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <br>Our expertise extends to the establishment of Express Feeders in partnership with the Maharashtra State Electricity Distribution Company Limited (MSEDCL). 
+              <br><br>These high-capacity feeders are designed for rapid and efficient power distribution, reducing transmission losses and ensuring reliable electricity supply. <br><br>We collaborate closely with MSEDCL to design, build, and maintain Express Feeders that adhere to their specifications and regulatory standards. 
+              <br><br>Our solutions enable seamless energy distribution to meet the growing demands of residential, commercial, and industrial consumers while promoting energy efficiency and sustainability. <br><br>
+              Count on us for the implementation of Express Feeders that contribute to a robust and dependable electrical infrastructure in collaboration with MSEDCL.
+            </p> <br><br><br><br><br>
+            <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+          </div>
+          <div class="sm:text-center lg:text-left">
+            <h1 class="text-4xl font-bold sm:text-5xl md:text-5xl">
+              <span class="block text-red-600 xl:inline">Upto 50MW</span>
+              <span class="block xl:inline">Project Working Capacity</span>
+              <h1 class="text-left md:text-left text-4xl md:text-5xl text-red-600 font-bold">&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</h1></h1>
+            <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <br>Our capabilities extend to the successful execution of projects with a remarkable capacity of up to 50 megawatts.<br> <br> This substantial project working capacity demonstrates our proficiency in handling substantial electrical initiatives, ranging from large-scale industrial installations to renewable energy projects. <br><br> Our dedicated team possesses the expertise and resources required to ensure the seamless execution of projects at this scale, all while maintaining our commitment to quality, efficiency, and safety. <br><br>Whether it's power generation, distribution, or renewable energy endeavors, we stand ready to deliver solutions that match the high demand for electrical power.
+            </p>
+            <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+          </div>
+        </main>
+      </div>
+    </div>
+    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="img/expressfeeder.jpg" alt="">
+    </div>
+  </div>
+</section>
+
+
+
+<br><br><br>
+
+
+
+<section class="bg-white">
+  <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+      <nav class="flex flex-wrap justify-center -mx-5 -my-2">
+          <div class="px-5 py-2">
+              <a href="index.html" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  Home
+              </a>
+          </div>
+          <div class="px-5 py-2">
+              <a href="services.html" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  Services
+              </a>
+          </div>
+          <div class="px-5 py-2">
+              <a href="about.html" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  About
+              </a>
+          </div>
+          <div class="px-5 py-2">
+              <a href="contact.html" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  Contact
+              </a>
+          </div>
+          <div class="px-5 py-2">
+              <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  Terms
+              </a>
+          </div>
+      </nav>
+      <div class="flex justify-center mt-8 space-x-6">
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">Facebook</span>
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+              </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">Instagram</span>
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+              </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">Twitter</span>
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+              </svg>
+          </a>
+      </div>
+      <p class="mt-8 text-base leading-6 text-center text-gray-400">
+          © 2023 Mauli Electricals, All rights reserved. 
+      </p>
+  </div>
+</section>
+
+<!-- Section 2 -->
+<section class="text-gray-700 bg-white body-font">
+  <div class="container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row">
+      <p class="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4  sm:mt-0">Design & Development © 2023 WebINN
+      </p>
+  </div>
+</section>
+
+<!-- Section 3 -->
+<section class="w-full bg-white">
+  <div class="px-8 py-12 mx-auto max-w-7xl">
+      <div class="grid grid-cols-2 gap-10 mb-3 md:grid-cols-3 lg:grid-cols-12 lg:gap-20">
+          <div class="col-span-3">
+              <a href="index.html" class="text-xl font-black leading-none text-gray-900 select-none logo"><img src="img/logo.png" alt=""></a>
+              <p class="my-4 text-xs leading-normal text-gray-500">
+                  Beautifully hand-crafted components to help you build amazing pages.
+              </p>
+          </div>
+          <nav class="col-span-1 md:col-span-1 lg:col-span-2">
+              <p class="mb-3 text-xs font-semibold tracking-wider text-gray-400 uppercase">Product</p>
+              <a href="#" class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary">Features</a>
+              <a href="#" class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary">Integrations</a>
+              <a href="#" class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary">Documentation</a>
+              <a href="#" class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary">FAQs</a>
+              <a href="#" class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary">Pricing</a>
+          </nav>
+          <nav class="col-span-1 md:col-span-1 lg:col-span-2">
+              <p class="mb-3 text-xs font-semibold tracking-wider text-gray-400 uppercase">About</p>
+              <a href="#" class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary">Our Story</a>
+              <a href="#" class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary">Company</a>
+              <a href="#" class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary">Privacy</a>
+              <a href="#" class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary">Blog</a>
+          </nav>
+          <nav class="col-span-2 md:col-span-1 lg:col-span-2">
+              <p class="mb-3 text-xs font-semibold tracking-wider text-gray-400 uppercase">Contact</p>
+              <a href="#" class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary">Advertising</a>
+              <a href="#" class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary">Press</a>
+              <a href="#" class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary">Email</a>
+              <a href="#" class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary">Partners</a>
+              <a href="#" class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary">Jobs</a>
+          </nav>
+          <div class="col-span-3">
+              <p class="mb-3 text-xs font-semibold tracking-wider text-gray-400 uppercase">SUBSCRIBE TO OUR NEWSLETTER</p>
+              <form action="#" class="mb-2">
+                  <div class="relative flex items-center overflow-hidden border border-gray-200 rounded-lg">
+                      <input class="w-full px-3 py-2 text-base leading-normal transition duration-150 ease-in-out bg-white appearance-none focus:outline-none" type="email" placeholder="Enter your email">
+                      <button class="px-3 py-2 text-xs text-sm font-medium text-center text-white no-underline bg-indigo-500 border-2 border-indigo-500" type="submit">Subscribe</button>
+                  </div>
+              </form>
+              <p class="text-xs leading-normal text-gray-500">Get the latest updates and news about our service.</p>
+          </div>
+      </div>
+      <div class="flex flex-col items-start justify-between pt-10 mt-10 border-t border-gray-100 md:flex-row md:items-center">
+          <p class="mb-6 text-sm text-left text-gray-600 md:mb-0">© Copyright 2021 Mauli Electricals All Rights Reserved.</p>
+          <div class="flex items-start justify-start space-x-6 md:items-center md:justify-center">
+              <a href="#_" class="text-sm text-gray-600 transition hover:text-primary">Terms</a>
+              <a href="#_" class="text-sm text-gray-600 transition hover:text-primary">Privacy</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+  <script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+  </script>
+</body>
+</html>

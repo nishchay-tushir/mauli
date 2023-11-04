@@ -1,0 +1,567 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mauli Electricals</title>
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+                    },
+                    keyframes: {
+                        'infinite-scroll': {
+                            from: { transform: 'translateX(0)' },
+                            to: { transform: 'translateX(-100%)' },
+                        }
+                    }                    
+                },
+            },
+        };
+    </script>
+
+  <style>
+    /* Custom CSS for the slideshow */
+    .slide {
+        animation: fadeIn 5s;
+    }
+        @keyframes fadeIn {
+            0% { opacity: 0.5; }
+            10% { opacity: 1; }
+            90%{opacity: 1;}
+            100%{opacity: 0.5;}
+
+        }
+
+        @keyframes slide-up {
+            0% {transform: translateY(100%);}
+            100% {transform: translateY(0);}
+        }
+
+        .slide-up {
+        animation: slide-up 0.5s ease-in-out; /* 0.5s duration with ease-in-out timing function */
+        
+        }
+
+    .overlay {
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .slide img {
+            object-fit: cover;
+            min-width: 100%; 
+            min-height: 30rem;
+            max-height: 45rem;            
+            
+    }
+
+    .textmain{
+        margin-top: 20rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 300;
+        font-size: 8ch;
+        opacity: 0.7;
+    }
+
+    .about{
+        display: grid;
+        grid-template-columns: 50%  40%;
+        padding: 100px;
+        grid-column-gap: 5%;
+        grid-row-gap: 10%;
+
+    }
+
+
+    .col_half { width: 49%; }
+    .col_third { width: 32%; }
+    .col_fourth { width: 23.5%; }
+    .col_fifth { width: 18.4%; }
+    .col_sixth { width: 15%; }
+    .col_three_fourth { width: 74.5%;}
+    .col_twothird{ width: 66%;}
+    .col_half,
+    .col_third,
+    .col_twothird,
+    .col_fourth,
+    .col_three_fourth,
+    .col_fifth{
+        position: relative;
+        display:inline;
+        display: inline-block;
+        float: left;
+        margin-right: 2%;
+        margin-bottom: 20px;
+    }
+    .end { margin-right: 0 !important; }
+    /* Column Grids End */
+
+    .wrapper { width: 800px; margin: 30px auto; position: relative;}
+    .counter { background-color: #ffffff; padding: 20px 0; border-radius: 5px;}
+    .count-title { font-size: 40px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
+    .count-text { font-size: 13px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
+    .fa-2x { margin: 0 auto; float: none; display: table; color: #4ad1e5; }
+
+    .wrapper{
+        margin-left: -50px;
+    }
+
+    .image{
+        height: 10rem;
+    }
+
+
+
+    .first{
+        display: grid;
+        grid-template-columns: 47.5% 47.5%;
+        grid-column-gap: 5%;
+        margin: 80px;
+        text-align: left;
+        width: 90%;
+        font-size: 22px;
+    }
+
+    .fi{
+        background-color: #e9e0e8;
+        padding: 40px;
+        margin-bottom: 60px;
+        border-radius: 20px;
+    }
+
+    .fi h2{
+        padding-top: 8px;
+        padding-bottom: 5px;
+    }
+
+    .gallery{
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 100px;
+    }
+
+    .gallery H2{
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+        flex: 33%;
+        max-width: 33%;
+        padding: 0 4px;
+
+        }
+
+        .column img {
+        margin-top: 10px;
+        vertical-align: middle;
+        width: 100%;
+        max-height: 35rem;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 400ms ease-out;
+        }
+
+        .column img:hover{
+            transform: scale(1.15);
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+        .column {
+            flex: 50%;
+            max-width: 50%;
+            
+        }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+        .column {
+            flex: 100%;
+            min-width: 100%;
+        }
+        }
+
+   
+
+
+    @media only screen and (max-width: 768px) {
+        .about{
+            grid-template-columns: 100%;
+            padding: 50px;
+        }
+
+
+        .first{ 
+            grid-template-columns: 90%;
+            font-size: 15px;
+            margin: 10%;
+        }
+
+        .wrapper{
+            display: none;
+        }
+
+    }
+
+
+        
+</style>
+
+</head>
+
+<body >
+  <nav class="fixed z-10 p-5 bg-white shadow md:flex md:items-center md:justify-between min-w-full">
+    <div class="flex justify-between items-center ">
+      <span class="text-2xl font-[Poppins] cursor-pointer">
+        <img class="h-10 inline"
+          src="img/logo.png">
+      </span>
+
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+
+    <ul class="md:flex md:items-center z-[1]  md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 right-[-200px] transition-all ease-in duration-200">
+      <li class="mx-4 my-6 md:my-0">
+        <a href="index.html" class="font-bold tracking-wide text-l hover:text-red-600 duration-500 ">HOME</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="services.html" class="font-bold tracking-wide text-l hover:text-red-600 duration-500">SERVICES</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="about.html" class="font-bold tracking-wide text-l hover:text-red-600 duration-500">ABOUT</a>
+      </li>
+
+      <button class="bg-red-600 text-white font-bold tracking-wide duration-500 px-6 py-2 mx-4 hover:bg-red-800 rounded ">
+        <a href="contact.html"> CONTACT US</a>
+      </button>
+        <h2 class=""></h2>
+            </ul>
+  </nav>
+  <script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('right-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('right-[80px]'),list.classList.remove('opacity-100'))
+    }
+  </script>
+
+    <!-- Slideshow Container -->
+    <div class="relative ">
+        <!-- Slides -->
+        <div class="carousel ">
+            <div class="slide ">
+                <img src="img/IMG-20231025-WA0012.jpg " alt="Slide 1">
+                <div class="overlay ">
+                    <h2 class=" slide-up textmain" ></h2>
+                </div>
+            </div>
+            <div class="slide ">
+                <img src="img/IMG-20231027-WA0050.jpg" alt="Slide 2">
+                <div class="overlay ">
+                    <h2 class=" slide-up textmain"></h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/IMG-20231027-WA0061.jpg" alt="Slide 3">
+                <div class="overlay">
+                    <h2 class=" slide-up textmain"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    // JavaScript for handling the slideshow functionality (you can add your own logic here).
+    document.addEventListener('DOMContentLoaded', function () {
+        let slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.classList.remove('hidden');
+                } else {
+                    slide.classList.add('hidden');
+                }
+            });
+        }
+
+        showSlide(currentSlide);
+
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }, 5000); // Change slide every 3 seconds (adjust as needed).
+    });
+</script>
+
+    <div class="about ">
+        <div class="abouttext ">
+        <h2 class="text-2xl md:text-4xl text-red-600 font-bold">SAFE AND EFFICIENT</h2>
+        <h2 class="text-2xl md:text-4xl font-bold">ENGINEERING SOLUTIONS <br></h2>
+        <h2 class="text-3xl text-red-600 font-bold md:text-2xl ">___________ <br></h2>
+        <p class="py-5 text-l md:text-xl ">Mauli Electricals objective and mission is to offer its customers the highest quality of
+        electrical and customer services.
+        We strive to meet the highest level of customer satisfaction.
+        Mauli Electricals focuses on personalized services by offering convenience and competitive
+        costing to customers.
+        Additionally, we have a wide scope of electrical knowledge and skills.
+        </p>
+
+        <div class="wrapper ">
+        <div class="counter col_fourth">
+          <i class="fa fa-code fa-2x"></i>
+          <h2 class="timer count-title count-number text-red-600 font-bold" data-to="200" data-speed="1500"></h2>
+           <p class="count-text text-xl font-semibold ">PROJECTS HANDLED</p>
+        </div>
+    
+        <div class="counter col_fourth">
+          <i class="fa fa-coffee fa-2x"></i>
+          <h2 class="timer count-title count-number text-red-600 font-bold" data-to="0" data-speed="1500"></h2>
+          <p class="count-text text-xl font-semibold">INCIDENTS</p>
+        </div>
+    
+        <div class="counter col_fourth">
+          <i class="fa fa-lightbulb-o fa-2x"></i>
+          <h2 class="timer count-title count-number text-red-600 font-bold" data-to="40" data-speed="1500"></h2>
+          <p class="count-text text-xl font-semibold ">ONGOING</p>
+        </div>
+    
+        <div class="counter col_fourth end">
+          <i class="fa fa-bug fa-2x"></i>
+          <h2 class="timer count-title count-number text-red-600 font-bold" data-to="157678" data-speed="1500"></h2>
+          <p class="count-text text-xl font-semibold ">SAFE MAN HOURS</p>
+        </div>
+    </div>
+        </div>
+            <img src="img/IMG-20231027-WA0008.jpg" class="rounded-3xl mb-28		">
+    </div>
+
+    
+
+    <script>
+       (function ($) {
+    $.fn.countTo = function (options) {
+        options = options || {};
+
+        return $(this).each(function () {
+            var $this = $(this);
+
+            var observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        startCounting($this, options);
+                        observer.unobserve($this[0]);
+                    }
+                });
+            });
+
+            observer.observe(this);
+        });
+    };
+
+    function startCounting($element, options) {
+        var settings = $.extend({}, $.fn.countTo.defaults, {
+            from: $element.data('from'),
+            to: $element.data('to'),
+            speed: $element.data('speed'),
+            refreshInterval: $element.data('refresh-interval'),
+            decimals: $element.data('decimals')
+        }, options);
+
+        var loops = Math.ceil(settings.speed / settings.refreshInterval);
+        var increment = (settings.to - settings.from) / loops;
+
+        var loopCount = 0;
+        var value = settings.from;
+
+        var interval = setInterval(function () {
+            value += increment;
+            loopCount++;
+
+            render(value);
+
+            if (typeof (settings.onUpdate) == 'function') {
+                settings.onUpdate.call($element[0], value);
+            }
+
+            if (loopCount >= loops) {
+                clearInterval(interval);
+                value = settings.to;
+
+                if (typeof (settings.onComplete) == 'function') {
+                    settings.onComplete.call($element[0], value);
+                }
+            }
+        }, settings.refreshInterval);
+
+        function render(value) {
+            var formattedValue = settings.formatter.call($element[0], value, settings);
+            $element.html(formattedValue);
+        }
+    }
+
+    $.fn.countTo.defaults = {
+        from: 0,
+        to: 0,
+        speed: 1000,
+        refreshInterval: 100,
+        decimals: 0,
+        formatter: formatter,
+        onUpdate: null,
+        onComplete: null
+    };
+
+    function formatter(value, settings) {
+        return value.toFixed(settings.decimals);
+    }
+})(jQuery);
+
+jQuery(function ($) {
+    $('.count-number').data('countToOptions', {
+        formatter: function (value, options) {
+            return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+        }
+    });
+
+    $('.timer').countTo(); // Count elements when they become visible
+});
+
+    </script>
+        <div class=" text-center ">
+            <h2 class=" text-2xl md:text-4xl text-red-600 font-bold">OUR </h2>
+            <h2 class=" text-2xl md:text-4xl  font-bold">  EXPERTISE</h2>
+            <h2 class="text-3xl text-red-600 font-bold md:text-2xl ">___________ <br></h2>
+        </div>
+       
+        
+        
+        <div class="first ">
+            <div class="fi">
+                 <img src="img/electrical.png" alt=""> 
+                 <h2 class=" text-xl md:text-4xl text-red-600 font-semibold">Electrical installations & Maintenance</h2>
+                 <h3 >We provide complete Electrical Installations and Maintenance with finest quality products and full security of the same</h3></div>
+            <div class="fi">
+                <img src="img/panels.png" alt=""> 
+                <h2 class=" text-xl md:text-4xl text-red-600 font-semibold">Panels</h2>
+                <h3>Mauli Electronics is one of the leading organizations involved in providing services and products in the field of electrical engineering. We design and manufacture all types of HT / LT and MV Electrical and Instrumentation Control panels. Our products are widely used for various applications and utilities in the industrial and commercial sector.</h3></div>
+            <div class="fi">                
+                <img src="img/industry.png" alt="">
+                <h2 class=" text-xl md:text-4xl text-red-600 font-semibold">Industry 4.0 Solutions</h2>
+                <h3 >Mauli Electronics provides a powerpack Research and Development Unit that works extensively on the paradigms of Industry 4.0 and offers solutions in the same domain. Our array of services includes hardware, firmware/software development, maintenance, reverse engineering, Software testing and technical documentation.</h3></div>
+            <div class="fi">
+                <h2 class=" text-xl md:text-4xl text-red-600 font-semibold">LED Solutions</h2>
+                <img src="img/led.png" alt="">
+                <h3 >Mauli Electronics is an eminent manufacturer of LED lighting Solutions. Offered range of lights is designed & developed using the latest technology at our advanced workplace in accordance with the approved industry norms and safety parameters. Under our product gamut, we have assorted Commercial Luminaires, Cleanroom Luminaires, Industrial Luminaires, Street Light Luminaires, Landscape Luminaires, Flameproof Luminaires, Battery Backup and Smart Sensor & Human Centric Luminaires.</h3></div>
+        </div>
+
+    <div class="bg-gray-950	max-h-2 max-w-5 mb-20" >i</div>
+
+    <h5 class="font-sans font-bold	text-center	text-black pb-20 text-xl	md: text-4xl">OUR CLIENTELE</h2>
+
+    <div class="relative font-inter antialiased image">
+
+        <main class="relative  flex flex-col justify-center bg-slate-100	 overflow-hidden">
+            <div class="w-full max-w-7xl mx-auto">
+                <div class="text-center">
+
+                    <!-- Logo Carousel animation  -->
+                    <div
+                        x-data="{}"
+                        x-init="$nextTick(() => {
+                            let ul = $refs.logos;
+                            ul.insertAdjacentHTML('afterend', ul.outerHTML);
+                            ul.nextSibling.setAttribute('aria-hidden', 'true');
+                        })"
+                        class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+                    >
+                        <ul x-ref="logos" class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll ">
+                            <li class="max-h-44	bg-cover">
+                                <img src="img/emerson.png"   />
+                            </li>
+                            <li class="max-h-44	">
+                                <img src="img/norma.png"  />
+                            </li>
+                            <li class="max-h-44	">
+                                <img src="img/sc.png"  />
+                            </li>
+                            <li class="max-h-44	">
+                                <img src="img/umv.png "  />
+                            </li>
+                            <li class="max-h-44	bg-cover">
+                                <img src="img/aqua.png"   />
+                            </li>
+                            <li class="max-h-44	">
+                                <img src="img/shapo.png"  />
+                            </li>
+                        </ul>                
+                    </div>
+                    <!-- End: Logo Carousel animation  -->
+                    
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+
+    <div class="gallery">
+
+        <h2 class=" text-4xl md:text-5xl text-red-600 font-bold">GALLERY </h2>
+        <div class="row">
+            <div class="column">
+              <img src="/img/gal/1.jpg">
+              <img src="/img/gal/2.jpg">
+              <img src="/img/gal/5.jpg">
+            </div>
+            <div class="column">
+              <img src="img/gal/4.jpg">
+              <img src="/img/gal/3.jpg">
+              <img src="/img/gal/6.jpg">
+            </div>
+            <div class="column">
+                <img src="img/gal/7.jpg">
+                <img src="/img/gal/8.jpg">
+                <img src="/img/gal/9.jpg">
+              </div>
+          </div>
+    </div>
+       
+
+
+
+
+
+</body>
+</html>

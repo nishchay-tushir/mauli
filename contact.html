@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mauli Electricals</title>
+  <link rel="icon" href="content/logo.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""></script>
+</head>
+
+<style>
+
+  .mp{
+    width: 80%;
+    margin-left: 10%;
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: 50% 50%;
+  }
+  #map {
+        height: 400px;
+        margin-left: 10%;
+        margin-top: 20px;      
+        padding-bottom: 20px;  
+        width: 80%;
+        border-radius: 20px;
+      }
+  .form{
+    width: 100%; 
+    background-color: rgb(228, 228, 228);
+
+    height: min-content;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .form{
+      grid-template-columns: 100%;
+    }
+  }
+</style>
+
+<body >
+  <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center ">
+      <span class="text-2xl font-[Poppins] cursor-pointer">
+        <img class="h-10 inline"
+          src="img/logo.png">
+      </span>
+
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+
+    <ul class="md:flex md:items-center z-[1]  md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 right-[-200px] transition-all ease-in duration-200">
+      <li class="mx-4 my-6 md:my-0">
+        <a href="index.html" class="font-bold tracking-wide text-l hover:text-red-600 duration-500 ">HOME</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="services.html" class="font-bold tracking-wide text-l hover:text-red-600 duration-500">SERVICES</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="about.html" class="font-bold tracking-wide text-l hover:text-red-600 duration-500">ABOUT</a>
+      </li>
+
+      <button class="bg-red-600 text-white font-bold tracking-wide duration-500 px-6 py-2 mx-4 hover:bg-red-800 rounded ">
+        <a href="contact.html"> CONTACT US</a>
+      </button>
+        <h2 class=""></h2>
+            </ul>
+  </nav>
+
+  <div class="form mt-10">
+
+    <div class="first pl-20">
+      <h1 class="text-3xl md:text-6xl text-red-600 font- pt-20">CONTACT US</h1>
+      <h1 class="text-3xl md:text-5xl text-black font-bold pt-2">WE ARE HERE FOR YOU!</h1>
+      <p class="pt-5 font-bold text-xl">
+        At Orbital, we give utmost priority to our clients. It is our duty to serve you to the best of our ability.
+      </p>
+      <p class="pt-5 text-l">
+        Address : Shop no 7, Ozone Building, MSEB Road, Talegaon Dabhade,
+        Tal. Maval, Dist. Pune-410507
+      </p>
+      <h2 class="pt-5 ">Contact No : +91 97636 24971 </h2>
+      <h2 class="pt-5 pb-20">maulielectrals@mauliele.in</h2>
+      
+
+    </div>
+
+    <div class="pt-0 md:pt-20 second pl-20  pb-10">
+      <form id="contactForm">
+        <input class=" w-9/12 p-3	" type="text" id="name" name="name" required placeholder="Name"><br><br>
+        
+        <input class=" w-9/12 p-3	" type="email" id="email" name="email" required placeholder="E-mail"><br><br>
+        
+        <textarea class=" w-9/12 p-3	 " id="message" name="message" required placeholder="Message"></textarea><br><br>
+        
+        <input class="text-2xl text-white  font-bold py-3 pl-10 pr-10 bg-black rounded-xl	" type="submit" value="SEND">
+    </form>
+    </div>
+    
+    
+  </div>
+  <div class="mp">
+    <div id="map"></div>
+    <div class="info">
+      <h1 class="text-2xl md:text-3xl text-red-600 font-bold pt-2">OUR LOCATION</h1>
+      <h1 class="text-3xl md:text-5xl text-black font-bold pt-2">PUNE OFFICE</h1>
+      <p class="pt-5 text-l">
+        Address : Shop no 7, Ozone Building, MSEB Road, Talegaon Dabhade,
+        Tal. Maval, Dist. Pune-410507
+      </p>
+      <h2 class="pt-5 ">Contact No : +91 97636 24971 </h2>
+    </div>
+  </div>
+  
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init("5gAVS16ZMJwL-YgOl"); // Replace with your EmailJS User ID
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            var form = this;
+            var params = {
+                name: form.name.value,
+                email: form.email.value,
+                message: form.message.value
+            };
+
+            emailjs.send("service_tc3wnq8", "template_dexurzr", params)
+                .then(function(response) {
+                    console.log("Email sent successfully", response);
+                    alert("Your message has been sent!");
+                    form.reset();
+                }, function(error) {
+                    console.error("Email could not be sent", error);
+                    alert("Sorry, an error occurred. Please try again later.");
+                });
+        });
+    </script>
+
+
+  <script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+
+  </script>
+
+    
+
+    <script>
+      var map = L.map('map').setView([18.7316335,73.6704525], 14); // Set the initial location and zoom level
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      var marker = L.marker([18.7316335,73.6704525]).addTo(map); // Set the marker's location
+      marker.bindPopup('<h2>Mauli Electricals </h2><a href="https://www.google.com/maps/place/OM+ENTERPRISES/@18.7316335,73.6704525,21z/data=!4m15!1m8!3m7!1s0x3bc2b1ee885a228d:0x8a4faca0d19936c4!2sMSEB+Rd,+Rajgurav+Colony,+Talegaon+Dabhade,+Maharashtra+410506!3b1!8m2!3d18.7302338!4d73.6703939!16s%2Fg%2F11rj6vg5rg!3m5!1s0x3bc2b1ee0532353f:0xe11441e5c74f31d6!8m2!3d18.7317153!4d73.6705809!16s%2Fg%2F11s5z9y15g?entry=ttu" target="_blank">Link on Google Maps</a>').openPopup();
+    </script>
+
+
+
+  <div class="footer">
+    <img src="/img/logo.png"  class="">
+    <div class="lin">
+      <a href="index.html" class=" tracking-wide text-l hover:text-red-600 duration-500 ">HOME</a>
+      <a href="services.html" class=" tracking-wide text-l hover:text-red-600 duration-500">SERVICES</a>
+      <a href="about.html" class=" tracking-wide text-l hover:text-red-600 duration-500">ABOUT</a>
+      <a href="contact.html" class=" tracking-wide text-l hover:text-red-600 duration-500">CONTACT</a>
+    </div>
+
+  </div>
+</body>
+</html>

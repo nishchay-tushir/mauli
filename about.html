@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mauli Electricals</title>
+  <link rel="icon" href="content/logo.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  .about{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    padding-top: -10%;
+    padding: 10%;
+    grid-column-gap: 10%;
+    grid-row-gap: 10%;
+
+}
+.why{
+  display: flex;
+}
+
+@media only screen and (max-width: 800px) {
+    .about{
+      min-height: 100vh;
+        grid-template-columns: 100%;
+    }
+    .about img{
+      margin-bottom: 160px;
+    }
+    .about p{
+      margin-bottom: -100px;
+    }
+    .why{
+      display: inline;
+    }
+}
+
+</style>
+<body >
+  <nav class="fixed p-5 bg-white shadow md:flex md:items-center md:justify-between min-w-full z-50">
+    <div class="flex justify-between items-center ">
+      <span class="text-2xl font-[Poppins] cursor-pointer">
+          <a href="index.html"><img class="h-10 inline"
+          src="img/logo.png"></a>
+      </span>
+
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+
+    <ul class="md:flex md:items-center z-[1]  md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 right-[-200px] transition-all ease-in duration-200">
+      <li class="mx-4 my-6 md:my-0">
+        <a href="index.html" class="font-bold tracking-wide text-l hover:text-red-600 duration-500 ">HOME</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="services.html" class="font-bold tracking-wide text-l hover:text-red-600 duration-500">SERVICES</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="about.html" class="font-bold tracking-wide text-l hover:text-red-600 duration-500">ABOUT</a>
+      </li>
+
+      <button class="bg-red-600 text-white font-bold tracking-wide duration-500 px-6 py-2 mx-4 hover:bg-red-800 rounded ">
+        <a href="contact.html"> CONTACT US</a>
+      </button>
+        <h2 class=""></h2>
+            </ul>
+  </nav>
+
+
+  <section class="container min-w-full"> 
+    <div class="bg-relative bg-center bg-no-repeat bg-cover min=w-full" style="background: linear-gradient(to right, #000000d7, #00000021), url('img/about.jpg') no-repeat; height: 90vh; background-size: cover;">
+      <div class="h-full flex flex-col justify-center items-left text-white text-2xl font-semibold">
+        <h1 class="text-7xl text-red-600" style="font-family:Arial, Helvetica, sans-serif; letter-spacing:1px; margin-left:2%; ">Everything</h1>
+        <h1 class="text-7xl" style="font-family:Arial, Helvetica, sans-serif; letter-spacing:1px; margin-left:6%;">About Us</h1>
+        <h1 class="text-7xl text-red-600" style="font-family:Arial, Helvetica, sans-serif; letter-spacing:1px; margin-left:8.5%;"></h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="section1">
+    <div class="about ">
+      <div class="abouttext ">
+      <h2 class="text-2xl md:text-4xl text-red-600 font-bold">PROVIDING ELECTRICAL</h2>
+      <h2 class="text-2xl md:text-4xl font-bold">SOLUTIONS SINCE 2009<br></h2>
+      <h2 class="text-3xl text-red-600 md:text-4xl font-bold">___________ <br></h2>
+      <p class="py-5 text-l md:text-xl ">Welcome to Mauli Electricals, a group of
+        progressive and
+        pro-active contractors providing quality
+        electrical work to industry and
+        commerce since 2009. <br><br>
+        All work undertaken by Mauli
+        Electricals is carried out with the highest
+        possible standards, and we pride
+        ourselves on our first class reputation for
+        efficient use of resources.
+         <br><br>
+        Our organization consists of vastly experienced technical staff for
+        execution of work consisting all required tools and testing
+        equipment.  <br><br>We assure best quality of work and supply of materials as per
+        the rules and regulations of Electrical Inspectorate and MSEDCL PVT LTD. <br><br>
+        Our capabilities include full design,
+        installation, and maintenance services and we
+        strive to ensure that all our customers
+        receive their value for money.
+      </p>
+      </div>
+          <img src="content/op.jpg" class="rounded-xl md: pt-px-[-4] secaimg">
+    </div>
+  </section>
+
+  
+  <section class="sec2 bg-slate-100 py-5">
+    <br>
+    <h1 class="text-center md:text-left md:mx-10 text-3xl md:text-5xl text-white-900 font-bold opacity-80">WHY CHOOSE<br> MAULI ELECTRICALS</h1>
+    <h1 class="text-center md:text-left md:mx-10 text-4xl md:text-5xl text-red-600 font-bold">&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</h1>
+  <br><br>
+    <div class="why">
+    <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8">
+      <img class="w-full" src="img/qualrel.jpg" alt="Quality & Reliability">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">Quality and Reliability</div>
+        <p class="text-gray-600 text-base">
+          Our commitment to quality and adherence to industry standards ensure the reliability and longevity of our electrical systems.
+        </p>
+      </div>
+    </div>
+    <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8">
+      <img class="w-full" src="img/qual.jpg" alt="Transparency">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">Transparency</div>
+        <p class="text-gray-600 text-base">
+          We maintain transparency in all aspects of our projects, from pricing to progress reports, giving clients peace of mind.
+        </p>
+      </div>
+    </div>
+    <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8">
+      <img class="w-full" src="img/costeff.jpg" alt="Sunset in the mountains">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">Cost-Effective Solutions</div>
+        <p class="text-gray-600 text-base">
+          We provide cost-effective options without compromising on quality, helping clients achieve their goals within budget.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="text-gray-700 body-font border-t border-gray-200">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+      <img alt="feature" class="object-cover object-center h-full w-full" src="img/vision.jpg">
+    </div>
+    <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+      <div class="flex flex-col mb-10 lg:items-start items-center">
+        <div class="flex-grow">
+          <h2 class="text-3xl md:text-5xl text-red-600 font-bold">OUR VISION</h2>
+          <h2 class="text-2xl md:text-4xl font-bold">FOR THE FUTURE</h2>
+          <h2 class="text-center md:text-left md:mx-1 text-2xl md:text-3xl text-red-600 font-bold">&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</h2> <br>
+          <p class="py-5 text-l md:text-xl ">Our vision for the future is to be a leader in the electrical solutions industry, continuously innovating and setting new standards. <br><br>
+             We aspire to create a world where sustainable and efficient energy solutions drive progress, and where our clients trust us as their partner of choice. <br><br>
+             With a commitment to excellence, safety, and environmental responsibility, we aim to leave a lasting positive impact on the communities we serve.  <br><br>
+             Our vision guides us towards a future where cutting-edge technology, custom solutions, and unwavering dedication come together to power a brighter, greener, and more connected world.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="text-gray-700 body-font border-t border-gray-200">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+      <div class="flex flex-col mb-10 lg:items-start items-center">
+        <div class="flex-grow">
+          <h2 class="text-3xl md:text-5xl text-red-600 font-bold">OUR MISSION</h2>
+          <h2 class="text-2xl md:text-4xl font-bold">THE HEART OF OUR WORK</h2>
+          <h2 class="text-center md:text-left md:mx-1 text-2xl md:text-3xl text-red-600 font-bold">&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</h2> <br>
+          <p class="py-5 text-l md:text-xl ">At the heart of our work is our mission, a guiding force that propels us forward with purpose and determination. <br><br>
+             Our mission is to provide top-notch electrical solutions that empower our clients, enhance sustainability, and drive <br>progress. <br><br>
+              We are dedicated to delivering excellence, from designing innovative systems to maintaining reliable installations. <br><br>
+              Our unwavering commitment to safety, quality, and environmental responsibility underscores every project we undertake. <br><br>
+              With our mission as our compass, we're on a journey to make <br>a meaningful and lasting impact in the electrical solutions industry, and we invite our clients to join us in this endeavor.</p>
+        </div>
+      </div>
+    </div>
+    <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+      <img alt="feature" class="object-cover object-center h-full w-full" src="img/mission.jpg">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+
+  </script>
+</body>
+</html>
