@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Mauli Electricals</title>
-  <link rel="icon" href="content/logo.png" type="image/x-icon">
+  <title>Mauli Electrical</title>
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script  src="./scripts.js"></script>
 </head>
 <style>
   .about{
@@ -40,9 +42,11 @@
       display: inline;
     }
 }
-
 </style>
 <body >
+  <div class="loading-screen" id="loadingScreen">
+    <img src="img/logo.png" alt="Loading Screen Image">
+</div>
   <nav class="fixed p-5 bg-white shadow md:flex md:items-center md:justify-between min-w-full z-50">
     <div class="flex justify-between items-center ">
       <span class="text-2xl font-[Poppins] cursor-pointer">
@@ -90,13 +94,13 @@
       <h2 class="text-2xl md:text-4xl text-red-600 font-bold">PROVIDING ELECTRICAL</h2>
       <h2 class="text-2xl md:text-4xl font-bold">SOLUTIONS SINCE 2009<br></h2>
       <h2 class="text-3xl text-red-600 md:text-4xl font-bold">___________ <br></h2>
-      <p class="py-5 text-l md:text-xl ">Welcome to Mauli Electricals, a group of
+      <p class="py-5 text-l md:text-xl ">Welcome to Mauli Electrical, a group of
         progressive and
         pro-active contractors providing quality
         electrical work to industry and
         commerce since 2009. <br><br>
         All work undertaken by Mauli
-        Electricals is carried out with the highest
+        Electrical is carried out with the highest
         possible standards, and we pride
         ourselves on our first class reputation for
         efficient use of resources.
@@ -118,7 +122,7 @@
   
   <section class="sec2 bg-slate-100 py-5">
     <br>
-    <h1 class="text-center md:text-left md:mx-10 text-3xl md:text-5xl text-white-900 font-bold opacity-80">WHY CHOOSE<br> MAULI ELECTRICALS</h1>
+    <h1 class="text-center md:text-left md:mx-10 text-3xl md:text-5xl text-white-900 font-bold opacity-80">WHY CHOOSE<br> MAULI ELECTRICAL</h1>
     <h1 class="text-center md:text-left md:mx-10 text-4xl md:text-5xl text-red-600 font-bold">&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</h1>
   <br><br>
     <div class="why">
@@ -191,11 +195,50 @@
       </div>
     </div>
     <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-      <img alt="feature" class="object-cover object-center h-full w-full" src="img/mission.jpg">
+      <img alt="feature" class="object-cover object-center h-full w-full" src="img/missiona.jpg">
     </div>
   </div>
 </section>
 
+<section class="healthqual md:my-14">
+  <h1 class="text-center text-2xl font-bold sm:text-5xl md:text-5xl w-full">
+    <span class="block text-red-600 xl:inline">HEALTH, SAFETY &</span>
+    <span class="block xl:inline">ENVIRONMENTAL POLICY</span><br>
+    <h1 class="text-center md:text-center text-xl md:text-4xl text-red-600 font-bold">&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</h1></h1>
+    
+    <div>
+      <p class="my-10 text-l md:text-xl mx-10 md:mx-16">At Mauli Electrical, we firmly believe that our long-term business success is contingent upon our capacity to consistently enhance service quality while upholding the well-being of people and the environment. Consequently, we are dedicated to fulfilling our customers' expectations and perpetually endeavor to augment the efficiency of our Quality, Health, Safety, and Environment (QHSE) Management System. To attain this objective, our unwavering focus will be on the following...</p>
+   </div>
+    </div>
+</section>
+<section class="text-gray-700 body-font border-gray-200">
+  <div class="container px-5 py-10 mx-auto flex flex-wrap">
+    <div class="flex flex-col flex-wrap -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+      <div class="flex flex-col mb-10 lg:items-start items-center">
+        <div class="flex-grow mx-10 text-left">
+          <p class="py-1 text-l md:text-xl w-full"><ul class="list-disc"><li class="text-l md:text-xl">Provision of safe working environment, prevention of injury, ill health and planning for
+            enhanced emergency preparedness.</li><br>
+            <li class="text-l md:text-xl">Minimizing adverse impact of our activities on the environment to prevent the pollution
+              and to preserve natural resources.
+              </li><br>
+              <li class="text-l md:text-xl">Optimal utilization of men, machine, finance and other resources.</li><br>
+                <li class="text-l md:text-xl">Devising planning systems for effective implementation.</li><br>
+                  <li class="text-l md:text-xl">Strong organizational support through human resources development.
+                  </li><br>
+                    <li class="text-l md:text-xl">Development of reliable vendors for a higher degree of Quality Assurance.
+                    </li><br>
+                      <li class="text-l md:text-xl">Complying with contractual requirements.</li><br>
+                        <li class="text-l md:text-xl">ommunicating openly with stakeholders and making them aware on the QHSE aspects.</li><br>
+                          <li class="text-l md:text-xl">Compliance of applicable legal and other requirements.</li></ul><br>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+      <img alt="feature" class="object-cover object-center h-full w-full" src="img/sust.jpg">
+    </div>
+  </div>
+</section>
 
 
 
@@ -213,5 +256,31 @@
     }
 
   </script>
+
+
+<div class="footer">
+  <div class="column">
+      <div class="logo">
+          <img src="img/logo.png" alt="Logo">
+      </div>
+  </div>
+  <div class="column about-us">
+      <h3 class="text-2xl md:text-3xl text-black font-bold pt-2">About Us</h3>
+      <p class="py-5">Welcome to Mauli Electrical, a group of progressive and pro-active contractors providing quality electrical work to industry and commerce since 2009.</p>
+  </div>
+  <div class="column quick-links">
+      <ul >
+          <li><a href="index.html"> Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </div>
+</div>
+
+<div class="dev">
+  <h3 class="py-1 ">© Copyright 2021 Mauli Electrical All Rights Reserved.  </h3>
+  <h3 class="py-1">Design & Development © 2023 WebINN</h3>
+</div>
 </body>
 </html>

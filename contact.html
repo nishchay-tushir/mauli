@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Mauli Electricals</title>
-  <link rel="icon" href="content/logo.png" type="image/x-icon">
+  <title>Mauli Electrical</title>
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -13,6 +14,12 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script  src="./scripts.js"></script>
+
+  
+  
+
 </head>
 
 <style>
@@ -22,10 +29,11 @@
     margin-left: 10%;
     display: grid;
     margin-top: 40px;
+    margin-bottom: 40px;
     grid-template-columns: 50% 50%;
   }
   #map {
-        height: 400px;
+        height: 300px;
         margin-left: 10%;
         margin-top: 20px;      
         padding-bottom: 20px;  
@@ -41,13 +49,6 @@
     grid-template-columns: 50% 50%;
   }
 
-  .footer{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: rgb(236, 236, 236);
-    width: 100%;
-    margin-top: 40px;
-  }
 
   @media screen and (max-width: 768px) {
     .form{
@@ -57,11 +58,14 @@
 </style>
 
 <body >
+
+  <div class="loading-screen" id="loadingScreen">
+    <img src="img/logo.png" alt="Loading Screen Image">
+</div>
   <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
     <div class="flex justify-between items-center ">
       <span class="text-2xl font-[Poppins] cursor-pointer">
-        <img class="h-10 inline"
-          src="img/logo.png">
+        <img class="h-10 inline"          src="img/logo.png">
       </span>
 
       <span class="text-3xl cursor-pointer mx-2 md:hidden block">
@@ -87,20 +91,20 @@
             </ul>
   </nav>
 
-  <div class="form mt-10">
+  <div class="form mt-10 md:mt-20">
 
-    <div class="first pl-20">
+    <div class="first pl-10">
       <h1 class="text-3xl md:text-6xl text-red-600 font- pt-20">CONTACT US</h1>
       <h1 class="text-3xl md:text-5xl text-black font-bold pt-2">WE ARE HERE FOR YOU!</h1>
       <p class="pt-5 font-bold text-xl">
-        At Orbital, we give utmost priority to our clients. It is our duty to serve you to the best of our ability.
+        At Mauli Electrical, we give utmost priority to our clients. It is our duty to serve you to the best of our ability.
       </p>
       <p class="pt-5 text-l">
         Address : Shop no 7, Ozone Building, MSEB Road, Talegaon Dabhade,
         Tal. Maval, Dist. Pune-410507
       </p>
       <h2 class="pt-5 ">Contact No : +91 97636 24971 </h2>
-      <h2 class="pt-5 pb-20">maulielectrals@mauliele.in</h2>
+      <h2 class="pt-5 pb-20">maulielectrical@mauliele.in</h2>
       
 
     </div>
@@ -177,20 +181,36 @@
       }).addTo(map);
 
       var marker = L.marker([18.7316335,73.6704525]).addTo(map); // Set the marker's location
-      marker.bindPopup('<h2>Mauli Electricals </h2><a href="https://www.google.com/maps/place/OM+ENTERPRISES/@18.7316335,73.6704525,21z/data=!4m15!1m8!3m7!1s0x3bc2b1ee885a228d:0x8a4faca0d19936c4!2sMSEB+Rd,+Rajgurav+Colony,+Talegaon+Dabhade,+Maharashtra+410506!3b1!8m2!3d18.7302338!4d73.6703939!16s%2Fg%2F11rj6vg5rg!3m5!1s0x3bc2b1ee0532353f:0xe11441e5c74f31d6!8m2!3d18.7317153!4d73.6705809!16s%2Fg%2F11s5z9y15g?entry=ttu" target="_blank">Link on Google Maps</a>').openPopup();
+      marker.bindPopup('<h2>Mauli Electrical </h2><a href="https://www.google.com/maps/place/OM+ENTERPRISES/@18.7316335,73.6704525,21z/data=!4m15!1m8!3m7!1s0x3bc2b1ee885a228d:0x8a4faca0d19936c4!2sMSEB+Rd,+Rajgurav+Colony,+Talegaon+Dabhade,+Maharashtra+410506!3b1!8m2!3d18.7302338!4d73.6703939!16s%2Fg%2F11rj6vg5rg!3m5!1s0x3bc2b1ee0532353f:0xe11441e5c74f31d6!8m2!3d18.7317153!4d73.6705809!16s%2Fg%2F11s5z9y15g?entry=ttu" target="_blank">Link on Google Maps</a>').openPopup();
     </script>
 
 
 
-  <div class="footer">
-    <img src="/img/logo.png"  class="">
-    <div class="lin">
-      <a href="index.html" class=" tracking-wide text-l hover:text-red-600 duration-500 ">HOME</a>
-      <a href="services.html" class=" tracking-wide text-l hover:text-red-600 duration-500">SERVICES</a>
-      <a href="about.html" class=" tracking-wide text-l hover:text-red-600 duration-500">ABOUT</a>
-      <a href="contact.html" class=" tracking-wide text-l hover:text-red-600 duration-500">CONTACT</a>
+    <div class="footer">
+      <div class="column">
+          <div class="logo">
+              <img src="img/logo.png" alt="Logo">
+          </div>
+      </div>
+      <div class="column about-us">
+          <h3 class="text-2xl md:text-3xl text-black font-bold pt-2">About Us</h3>
+          <p class="py-5">Welcome to Mauli Electrical, a group of progressive and pro-active contractors providing quality electrical work to industry and commerce since 2009.</p>
+      </div>
+      <div class="column quick-links">
+          <ul>
+              <li><a href="index.html"> Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </div>
     </div>
 
-  </div>
+    <div class="dev">
+      <h3 class="py-1 ">© Copyright 2021 Mauli Electrical All Rights Reserved.  </h3>
+      <h3 class="py-1">Design & Development © 2023 WebINN</h3>
+    </div>
+    
+
 </body>
 </html>

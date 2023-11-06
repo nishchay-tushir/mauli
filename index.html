@@ -11,6 +11,9 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script  src="./scripts.js"></script>
+</head>
     <script>
         tailwind.config = {
             theme: {
@@ -240,6 +243,9 @@
 </head>
 
 <body >
+    <div class="loading-screen" id="loadingScreen">
+        <img src="img/logo.png" alt="Loading Screen Image">
+    </div>
   <nav class="fixed z-10 p-5 bg-white shadow md:flex md:items-center md:justify-between min-w-full">
     <div class="flex justify-between items-center ">
       <span class="text-2xl font-[Poppins] cursor-pointer">
@@ -536,7 +542,7 @@ jQuery(function ($) {
     </div>
 
 
-    <div class="gallery">
+    <div class="gallery mb-40">
 
         <h2 class=" text-4xl md:text-5xl text-red-600 font-bold">GALLERY </h2>
         <div class="row">
@@ -558,7 +564,30 @@ jQuery(function ($) {
           </div>
     </div>
        
-
+    <div class="footer">
+        <div class="column">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+        </div>
+        <div class="column about-us">
+            <h3 class="text-2xl md:text-3xl text-black font-bold pt-2">About Us</h3>
+            <p class="py-5">Welcome to Mauli Electrical, a group of progressive and pro-active contractors providing quality electrical work to industry and commerce since 2009.</p>
+        </div>
+        <div class="column quick-links">
+            <ul >
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+  
+      <div class="dev">
+        <h3 class="py-1 ">© Copyright 2021 Mauli Electrical All Rights Reserved.  </h3>
+        <h3 class="py-1">Design & Development © 2023 WebINN</h3>
+      </div>
 
 
 
